@@ -1,0 +1,10 @@
+@model Contact
+
+<h1>Confirm Delete</h1>
+
+<h3>Are you sure that you want to delete @Model.FirstName @Model.LastName?</h3>
+
+<form asp-action="Destroy" asp-route-id="@Model.ContactId" >
+    <button type="submit" class="btn btn-danger">Delete Contact</button>
+    <a asp-action="Index">Cancel</a>
+</form>

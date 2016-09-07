@@ -1,0 +1,33 @@
+@model Contact
+
+<div class="form-group">
+    <label asp-for="FirstName" class="col-md-3 control-label"></label>
+    <div class="col-md-9">
+        <input asp-for="FirstName" class="form-control">
+        <span asp-validation-for="FirstName" class="text-danger"></span>
+    </div>
+</div>
+
+<div class="form-group">
+    <label asp-for="LastName" class="col-md-3 control-label"></label>
+    <div class="col-md-9">
+        <input asp-for="LastName" class="form-control">
+        <span asp-validation-for="LastName" class="text-danger"></span>
+    </div>
+</div>
+
+<div class="form-group">
+    <label asp-for="Telephone" class="col-md-3 control-label"></label>
+    <div class="col-md-9">
+        <input asp-for="Telephone" class="form-control">
+        <span asp-validation-for="Telephone" class="text-danger"></span>
+    </div>
+</div>
+
+<div class="form-group">
+    <label asp-for="EmailAddress" class="col-md-3 control-label"></label>
+    <div class="col-md-9">
+        <input asp-for="EmailAddress" class="form-control">
+        <span asp-validation-for="EmailAddress" class="text-danger"></span>
+    </div>
+</div>

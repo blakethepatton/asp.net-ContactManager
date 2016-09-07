@@ -1,0 +1,15 @@
+@model Contact
+
+<h1>Add a new Contact</h1>
+
+<form asp-controller="Contacts" asp-action="Create" class="form-horizontal" role="form">
+
+    @Html.Partial("_EditContact", Model)
+
+    <div class="form-group">
+        <div class="col-sm-9 col-sm-offset-3">
+            <button type="submit" class="btn btn-primary">Add Contact</button>
+            <a class="btn btn-default" asp-controller="Contacts" asp-action="Index">Cancel</a>
+        </div>
+    </div>
+</form>
